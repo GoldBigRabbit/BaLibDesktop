@@ -54,6 +54,6 @@
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
-  "version": "3.0.0-Final",
+  "version": "0.0.1",
   "web-types": "./web-types.json"
 }
