@@ -1,7 +1,7 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: umalib-build-and-release
+name: balib-build-and-release
 
 on:
   push:
@@ -38,11 +38,11 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
-          name: Uma Library Desktop ${{ github.ref_name }}
+          name: BA Library Desktop ${{ github.ref_name }}
           body: built by Github Actions
           draft: false
           prerelease: false
-          files: ./dist_electron/umalib-win64-${{ github.ref_name }}.7z
+          files: ./dist_electron/balib-win64-${{ github.ref_name }}.7z
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build-on-macos:
@@ -73,7 +73,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
-          name: Uma Library Desktop ${{ github.ref_name }}
-          files: ./dist_electron/umalib-mac-${{ github.ref_name }}.dmg
+          name: BA Library Desktop ${{ github.ref_name }}
+          files: ./dist_electron/balib-mac-${{ github.ref_name }}.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

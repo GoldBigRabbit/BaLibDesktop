@@ -5,16 +5,16 @@ module.exports = {
   pluginOptions: {
     electronBuilder: {
       builderOptions: {
-        appId: 'cn.umafan.lib',
-        productName: '赛马娘同人集中楼大书库',
+        appId: 'cn.blueArchive.lib',
+        productName: 'Moletalk——跨越世界，记录生活',
         mac: {
           icon: 'icons/icon.icns',
-          artifactName: 'umalib-mac-v${version}.${ext}',
+          artifactName: 'balib-mac-v${version}.${ext}',
           target: ['dmg'],
         },
         win: {
           icon: 'icons/256x256.png',
-          artifactName: 'umalib-win64-v${version}.${ext}',
+          artifactName: 'balib-win64-v${version}.${ext}',
           target: [{ target: '7z', arch: ['x64'] }],
         },
         extraResources: [

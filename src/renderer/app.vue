@@ -173,7 +173,7 @@ export default {
     this.appVersion = await connector.get('checkVersion', {});
     const current = new Date().getTime();
     axios
-      .get(`https://umalib.github.io/UmaLibDesktop/update-info.json?${current}`)
+      .get(`https://ba.github.io/BaLibDesktop/update-info.json?${current}`)
       .then(async response => {
         connector
           .get('log', {
@@ -242,11 +242,11 @@ export default {
             current) /
             1000}s`,
         });
-        this.$notify({
-          title: '版本检查失败！',
-          message: '请检查网络连接！',
-          type: 'warning',
-        });
+        // this.$notify({
+        //   title: '版本检查失败！',
+        //   message: '请检查网络连接！',
+        //   type: 'warning',
+        // });
       });
   },
 
@@ -303,7 +303,7 @@ export default {
           const current = new Date().getTime();
           const remoteVer = (
             await axios.get(
-              `https://umalib.github.io/UmaLibDesktop/update-info.json?${new Date().getTime()}`,
+              `https://ba.github.io/BaLibDesktop/update-info.json?${new Date().getTime()}`,
             )
           ).data;
           connector
@@ -316,11 +316,11 @@ export default {
             .then();
           this.downloadDialog.aimVersion = remoteVer['db_version'];
         } catch (_) {
-          this.$notify({
-            title: '数据库更新失败！',
-            message: '请检查网络连接！',
-            type: 'error',
-          });
+          // this.$notify({
+          //   title: '数据库更新失败！',
+          //   message: '请检查网络连接！',
+          //   type: 'error',
+          // });
           return;
         }
       }
@@ -332,7 +332,7 @@ export default {
       try {
         const current = new Date().getTime();
         const ret = await axios.get(
-          `https://umalib.github.io/UmaLibDesktop/${
+          `https://ba.github.io/BaLibDesktop/${
             this.downloadDialog.aimVersion
           }.zip?${new Date().getTime()}`,
           {

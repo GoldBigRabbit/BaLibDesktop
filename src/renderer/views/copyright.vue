@@ -9,20 +9,18 @@
         >
           <h1>{{ titles.copyright }}</h1>
         </el-tooltip>
-        <el-tooltip v-else content="以虚空吟唱者之名！">
+        <el-tooltip v-else content="以克苏鲁之名！">
           <h1>旧神方尖碑</h1>
         </el-tooltip>
       </el-row>
       <el-row>
         <h2>Staff</h2>
-        <small>以下为NGA论坛ID</small>
+        <small></small>
         <h4>主催</h4>
         <p>
-          <span>黑羽仙洛</span>
+          <span>阿拉萨德</span>
           <el-divider direction="vertical" />
-          <span>ChibaNils</span>
-          <el-divider direction="vertical" />
-          <span>风之低吟</span>
+          <span>仓鼠</span>
         </p>
         <h4>程序</h4>
         <p>
@@ -31,7 +29,7 @@
           <span>ForeverDdB</span>
         </p>
         <h4>录入协助</h4>
-        <small>按字母/笔画顺序，排名不分先后</small>
+        <small>排名不分先后</small>
         <p>
           <span v-for="(staff, i) in staffs" :key="i">
             <el-divider v-if="i % 8" direction="vertical" />
@@ -47,15 +45,13 @@
             <span>{{ editor }}</span>
           </span>
         </p>
-        <h4>复核协助</h4>
+        <h4>联络协助</h4>
         <p>
-          <span>我就是雷gay的化身</span>
+          <span>阿拉萨德</span>
           <el-divider direction="vertical" />
-          <span>nameabcd</span>
+          <span>我是地狱的复仇者——科比布莱恩特</span>
         </p>
-        <el-tooltip content="双王子？你为什么不问问黑暗剑呢？">
-          <h2>今日，我等攻略了大书库！</h2>
-        </el-tooltip>
+        <h2>今日，我等宣布项目解散！</h2>
       </el-row>
       <el-divider />
       <el-row>
@@ -76,7 +72,7 @@
         <p>
           <small>
             <el-link
-              href="https://bbs.nga.cn/read.php?tid=32535194#l2"
+              href="about:blank"
               style="font-size: inherit"
               target="_blank"
               type="primary"

@@ -13,7 +13,7 @@
     "vue-quill-editor": "^3.0.6",
     "vue-router": "^3.5.4"
   },
-  "description": "A library of doujin articles of Umamusume: Pretty Derby",
+  "description": "A library of doujin articles of Blue Archive",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
@@ -43,7 +43,7 @@
   },
   "electronVersion": "19.1.9",
   "main": "background.js",
-  "name": "uma-library-desktop",
+  "name": "ba-lib-desktop",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
