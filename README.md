@@ -1,6 +1,6 @@
 # Uma Library Desktop
 
-A library of doujin articles of _Umamusume: Pretty Derby_
+A library of doujin articles of _Blue Archive_
 
 ## Project setup
 ```
@@ -28,4 +28,4 @@ Developed based on [vue-electron-prisma-test](https://github.com/clementvp/vue-e
 
 ## Support
 
-Publishing post (Chinese): https://bbs.nga.cn/read.php?tid=32535194
+Publishing post (Chinese): about:blank
