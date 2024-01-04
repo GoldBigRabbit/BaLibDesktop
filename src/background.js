@@ -429,14 +429,14 @@ async function createWindow() {
           });
         },
       },
-      {
-        label: '重载数据库',
-        sublabel: '从云端拉取内置数据库',
-        toolTip: '从云端拉取内置数据库',
-        click() {
-          mainWindow.webContents.send('getOnlineDb', '');
-        },
-      },
+      // {
+      //   label: '重载数据库',
+      //   sublabel: '从云端拉取内置数据库',
+      //   toolTip: '从云端拉取内置数据库',
+      //   click() {
+      //     mainWindow.webContents.send('getOnlineDb', '');
+      //   },
+      // },
       {
         label: '安装本地数据库',
         sublabel: '从本地安装内置数据库',
