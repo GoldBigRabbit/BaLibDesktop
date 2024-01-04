@@ -57,7 +57,7 @@
       <el-row>
         <h2>其他译者/作者</h2>
         <small>NGA论坛ID，按字母/笔画顺序，排名不分先后</small>
-        <el-tooltip content="找不到您的名字？请联系@风之低吟">
+        <el-tooltip content="找不到您的名字？请联系@阿拉萨德">
           <p>
             <span v-for="(creator, i) in creators" :key="i">
               <el-divider v-if="i % 8" direction="vertical" />
@@ -72,7 +72,7 @@
         <p>
           <small>
             <el-link
-              href="about:blank"
+              href="https://bbs.nga.cn/read.php?tid=38898512"
               style="font-size: inherit"
               target="_blank"
               type="primary"

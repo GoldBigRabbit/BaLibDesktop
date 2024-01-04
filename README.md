@@ -28,4 +28,4 @@ Developed based on [vue-electron-prisma-test](https://github.com/clementvp/vue-e
 
 ## Support
 
-Publishing post (Chinese): about:blank
+Publishing post (Chinese): [[同人搬运] NGA碧蓝档案大书库发布贴暨意见收集贴](https://bbs.nga.cn/read.php?tid=38898512)
