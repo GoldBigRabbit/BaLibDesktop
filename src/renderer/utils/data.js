@@ -17,11 +17,11 @@ module.exports = {
   editors: editorList,
   elTagTypes: ['info', '', 'warning', 'success', 'danger'],
   signInfo: {
-    content: '开发：风之低吟 | 版本：3.0.0-Final',
+    content: '开发：风之低吟 | 版本：0.0.1',
     pubKey:
-      '04f7c5d1bf43e06c4a119deb999c33a488fc38d1a7f6387cdc0001ed190d6b304846b3d2931fb15f819c6e57ac7ce119f8c68e376a5631d5ccfc1f712a51187123',
+      '04b22adb255151b0ee6edc5ca38557e54689c786a91fefcbda4b2a36a004dc594aae5fadccd740a06b2d79e38458622ec41688c1106f365404beb7ab43c3ee2f72',
     sign:
-      '3045022100c2ecb6ccc89e1997b0f570a653acc0d65f4f923640274eb023092f8bfbf5915202207a781316d6010b985fee6934344bc28d69f074516a4fa12936118894110a5e4d',
+      '3045022100c8832c99a9c25261c542a5c46861e5957265d8c1f5b7affa28f337a900038dee02207601b6f4ca2fd5dadcde9e3a7c743ed012665b396de53a1b923f9ef086aaf281',
   },
   staffs: staffList,
   tagTypes: ['其他', '角色', '系列', '长篇/合集', '争议/不适'],
