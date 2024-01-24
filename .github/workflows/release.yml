@@ -9,7 +9,7 @@ on:
       - "v*"
 
 jobs:
-  build-on-windows:
+  win64:
     runs-on: windows-2019
     strategy:
       matrix:
@@ -43,37 +43,5 @@ jobs:
           draft: false
           prerelease: false
           files: ./dist_electron/balib-win64-${{ github.ref_name }}.7z
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  build-on-macos:
-    runs-on: macos-latest
-    strategy:
-      matrix:
-        node-version: [ 14.x ]
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout source
-        uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run electron:build
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PYTHON_PATH: /usr/local/bin/python
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ github.ref_name }}
-          name: BA Library Desktop ${{ github.ref_name }}
-          files: ./dist_electron/balib-mac-${{ github.ref_name }}.dmg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
